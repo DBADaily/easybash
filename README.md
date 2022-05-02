@@ -1,0 +1,2 @@
+# easybash
+Easy Bash
