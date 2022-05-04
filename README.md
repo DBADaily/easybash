@@ -873,7 +873,7 @@ To get all the days between `START_DATE` and `END_DATE` , there are also three w
 1. `get_dates` by `START_DATE` and `END_DATE` 
 
 ```
-lv_dates="$(get_dates ""${START_DATE}" " "${END_DATE}")"
+lv_dates="$(get_dates "${START_DATE}" "${END_DATE}")"
 print_dates "${lv_dates}"
 ```
 
