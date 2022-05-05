@@ -64,6 +64,3 @@ export COLOR_RESET=$(tput sgr0)
 # date
 export START_DATE=""
 export END_DATE=""
-
-#DB
-export DBTYPE=pg

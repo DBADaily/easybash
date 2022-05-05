@@ -2,6 +2,8 @@
 
 Easy Bash - a simple bash library to make scripting easier.
 
+![easybash](images/easybash.png)
+
 # How to use it
 
 Here is a step by step example to illustrate how easybash makes scripting easier.
@@ -457,6 +459,10 @@ done
 ![image-20220503232554380](images/image-20220503232554380.png)
 
 ## Logging
+
+By default, the `LOG_LEVEL` is `INFO` which will not print trace or debug messages.
+
+You can update `lib/lib_vars.sh` or add option `-v` to set `LOG_LEVEL` to `TRACE` to get more messsages.
 
 Test logging example script.
 
@@ -957,15 +963,15 @@ bash examples/test_date.sh -s 20220101 -d 3 -v
 
 # Conclusion
 
-easybash enables you write simple, efficient and colorful scripts easily.
+easybash helps you write simple, efficient and colorful scripts easily.
 
-You no longer need to:
+You no longer need to do the following manually:
 
 1. parse all the arguments manually
 2. set variables manually
 3. write help message manually
 4. write config file manually
-5. check manually whether all required parameters are set
+5. check whether all required parameters are set manually
 6. write logs manually
 
 And you are able to do the following easily:
