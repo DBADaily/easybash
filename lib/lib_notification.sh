@@ -13,7 +13,7 @@ send_email() {
   local lv_subject="$2"
   local lv_body="${3:-""}"
 
-  log_trace "${lv_subject} ${lv_body}"
+  log_trace "${lv_subject}"
   if [[ -n "${lv_recipients}" ]]; then
     echo "${lv_body}" | mail -s "${lv_subject}" "${lv_recipients}"
   fi
