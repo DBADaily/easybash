@@ -17,14 +17,15 @@ replace() {
 }
 
 get_string_from_arr() {
-  pv_sepa="$1"
+  local lv_sepa_char="$1"
   shift
-  pa_arr=("$@")
-  res=''
-  lv_sepa=''
-  for v in "${pa_arr[@]}"; do
-    res="${res}${lv_sepa}${v}"
-    lv_sepa="${pv_sepa}"
+  local la_arr=("$@")
+  local lv_res=''
+  local lv_sepa=''
+  local lv_value=''
+  for lv_value in "${la_arr[@]}"; do
+    lv_res="${lv_res}${lv_sepa}${lv_value}"
+    lv_sepa="${lv_sepa_char}"
   done
-  echo "${res}"
+  echo "${lv_res}"
 }

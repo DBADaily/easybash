@@ -10,7 +10,7 @@
 
 VERSION_STR="1.0.0"
 
-set -euo pipefail
+# set -euo pipefail
 
 export EASY_BASH_DIR="$(dirname "${BASH_SOURCE[0]}")"
 

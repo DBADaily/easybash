@@ -124,6 +124,7 @@ parse_args() {
   local lv_config_file="${SCRIPT_DIR}/${CONFIG_FILE}"
   if [[ -f "${lv_config_file}" ]]; then
     source "${lv_config_file}"
+    log_trace "config file found: ${lv_config_file}"
   fi
 
   eval set -- "${lv_valid_args}"
@@ -210,7 +211,7 @@ parse_args() {
           lv_write_hint=" with empty values"
         fi
         echo "# ${la_comment[$i]}" >>"${lv_config_file}"
-        echo -e "${la_vars[$i]}=\"${lv_option_value}\"\n" >>"${lv_config_file}"
+        echo -e "export ${la_vars[$i]}=\"${lv_option_value}\"\n" >>"${lv_config_file}"
       fi
     done
     log_info "config file generated${lv_write_hint}: ${lv_config_file}"

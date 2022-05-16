@@ -1,8 +1,22 @@
 # Easy Bash
 
-Easy Bash - a simple bash library to make scripting easier.
+Easy Bash is a simple bash library to make scripting easier.
+
+With Easy Bash, you are able to parse command line parameters with only one line(15 characters):
+
+```
+parse_args "$@"
+```
 
 ![easybash](images/easybash.png)
+
+# Easy Bash Overview
+
+In fact, there is much more Easy Bash can do.
+
+Here is an overview of the functionalities of Easy Bash.
+
+![easybash](images/easybash_libs.png)
 
 # How to use it
 
