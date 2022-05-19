@@ -40,7 +40,7 @@ send_notification() {
       lv_msg="[FAILURE] $(hostname): ${lv_msg}"
       send_msg "${lv_msg}" "${ln_flag}"
       #exit "${ln_flag}"
-      log_fatal "${lv_msg} ln_flag: ${ln_flag}"
+      log_fatal "${lv_msg}. ln_flag: ${ln_flag}"
     elif [[ -z "${lv_include_succ_ind}" || "${lv_include_succ_ind}" != "N" ]]; then
       if [[ "${SUCCESS_NOTIFICATION_IND:-""}" == 'Y' ]]; then
         send_msg "[SUCCESS] $(hostname): ${lv_msg}" "${ln_flag}"
